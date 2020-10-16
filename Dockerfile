@@ -8,4 +8,4 @@ RUN npm i
 
 RUN touch /kubernetes_web_server.log
 
-ENTRYPOINT [ "node", "app.js", "&>/kubernetes_web_server.log" ]
+ENTRYPOINT [ "node", "app.js"]
