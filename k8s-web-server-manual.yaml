@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metaData:
+  name: k8s-web-server-manual
+spec:
+  containers:
+    - image: PraveenMut/k8s-web-server
+      name: k8s-web-server
+      ports:
+        - containerPort: 8080
+          protocol: TCP
