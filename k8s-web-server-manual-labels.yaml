@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metaData:
+  name: k8s-web-server-v2
+  labels:
+    creation_method: manual
+    env: prod
+spec:
+  containers:
+    - image: PraveenMut/k8s-web-server
+      name: k8s-web-server
+      ports:
+        - containerPort: 8080
+          protocol: TCP
